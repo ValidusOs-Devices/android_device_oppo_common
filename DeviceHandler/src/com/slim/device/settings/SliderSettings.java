@@ -17,18 +17,18 @@
 package com.slim.device.settings;
 
 import android.os.Bundle;
-import android.preference.ListPreference;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceActivity;
-import android.preference.SwitchPreference;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.PreferenceActivity;
+import androidx.preference.SwitchPreference;
 
 import com.slim.device.KernelControl;
 import com.slim.device.R;
 import com.slim.device.util.FileUtils;
 
 public class SliderSettings extends PreferenceActivity
-        implements OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener {
 
     private ListPreference mSliderTop;
     private ListPreference mSliderMiddle;
